@@ -233,6 +233,7 @@ body{
   
   display:flex; justify-content:center; gap:calc(var(--s)*.6);
 }
+.float{display:block}
 .float{
   width:var(--s); height:var(--s); padding:0; border:0; background:none;
   cursor:pointer; -webkit-tap-highlight-color:transparent; border-radius:30%;

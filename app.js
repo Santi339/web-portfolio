@@ -1,9 +1,9 @@
 (function(){
   var icons=[
-    ["Home","#ff8a65",'<path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/>'],
+    ["Projects","#5ad1b0",'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/>', "projects.html"],
     ["Mail","#ffb703",'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>', "mailto:sareliz@csustan.edu"],
-    ["Favorites","#f06595",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>'],
-    ["Art","#a98bf0",'<path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z"/><path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7"/><path d="M14.5 17.5 4.5 15"/>']
+    ["Thing I Like","#f06595",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>', "about.html"],
+    ["Art","#a98bf0",'<path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z"/><path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7"/><path d="M14.5 17.5 4.5 15"/>', "art.html"]
   ];
   var scene=document.getElementById("scene"), dock=document.getElementById("dock");
   var calm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -18,8 +18,11 @@
   document.getElementById("w2").setAttribute("d",wavePath(5,1.7));
 
   var items=icons.map(function(ic){
-    var b=document.createElement("button");
-    b.className="float"; b.type="button"; b.setAttribute("aria-label",ic[0]); b.title=ic[0];
+    var b=document.createElement("a");
+    b.className="float";
+    b.href=ic[3];
+    b.target="_blank"; b.rel="noopener";
+    b.setAttribute("aria-label",ic[0]); b.title=ic[0];
     b.style.setProperty("--a",rnd(5,10).toFixed(1)+"px");
     b.style.setProperty("--r",rnd(2,5).toFixed(1)+"deg");
     b.style.setProperty("--d",rnd(2.8,4.4).toFixed(2)+"s");
