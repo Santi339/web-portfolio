@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
+  <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">El Sapo Santi</a>
+            <button class="theme-toggle" id="themeToggle" type="button"></button>
+            <a href="/" id="navbar__logo">Santi</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -26,12 +27,22 @@
                     <a href="/art.html" class="navbar__links">Art</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">About Me</a>
+                    <a href="/" class="button">About</a>
                 </li>
             </ul>
         </div>
 
     </nav>
+<header>
+</header>
+<main class="scene" id="scene">
+  <div class="dock" id="dock">
+  </div>
+  <div class="water" aria-hidden="true">
+    <svg class="wave back" viewBox="0 0 3200 40" preserveAspectRatio="none"><path id="w2"/></svg>
+    <svg class="wave" viewBox="0 0 3200 40" preserveAspectRatio="none"><path id="w1"/></svg>
+  </div>
+</main>
     <script src='app.js'></script>
 </body>
 </html>
