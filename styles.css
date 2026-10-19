@@ -223,7 +223,7 @@ body{
 
 }
 .scene{
-  --s:min(90px,calc((94vh - 8px)/4));
+--s:min(124px,calc((100vw - 64px)/6.6));
   position:relative; width:100%; max-width:4000px; margin:0 auto;
   height:clamp(1300px,92vh,400px); border-radius:2px; overflow:hidden;
   background:linear-gradient(var(--sky1),var(--sky2));

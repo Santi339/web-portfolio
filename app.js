@@ -3,7 +3,7 @@
     ["Home","#ff8a65",'<path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/>'],
     ["Mail","#ffb703",'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>', "mailto:sareliz@csustan.edu"],
     ["Favorites","#f06595",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>'],
-    ["Music","#a98bf0",'<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>']
+    ["Art","#a98bf0",'<path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z"/><path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7"/><path d="M14.5 17.5 4.5 15"/>']
   ];
   var scene=document.getElementById("scene"), dock=document.getElementById("dock");
   var calm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
