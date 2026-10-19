@@ -1,10 +1,8 @@
 (function(){
   var icons=[
     ["Home","#ff8a65",'<path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/>'],
-    ["Mail","#ffb703",'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>'],
-    ["Search","#3ec9a7",'<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>'],
+    ["Mail","#ffb703",'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>', "mailto:sareliz@csustan.edu"],
     ["Favorites","#f06595",'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>'],
-    ["Camera","#6f8cff",'<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>'],
     ["Music","#a98bf0",'<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>']
   ];
   var scene=document.getElementById("scene"), dock=document.getElementById("dock");
@@ -18,16 +16,6 @@
   }
   document.getElementById("w1").setAttribute("d",wavePath(6,0));
   document.getElementById("w2").setAttribute("d",wavePath(5,1.7));
-
-  function ripple(el,big){
-    var s=scene.getBoundingClientRect(), r=el.getBoundingClientRect();
-    var n=big?2:1;
-    for(var i=0;i<n;i++){
-      var d=document.createElement("i");
-      d.style.left=(r.left+r.width/2-s.left)+"px";
-      d.style.top=(s.height/2)+"px";
-    }
-  }
 
   var items=icons.map(function(ic){
     var b=document.createElement("button");

@@ -223,15 +223,15 @@ body{
 
 }
 .scene{
-  --s:min(84px,calc((100vw - 64px)/6.6));
+  --s:min(90px,calc((94vh - 8px)/4));
   position:relative; width:100%; max-width:4000px; margin:0 auto;
-  height:clamp(1300px,52vh,400px); border-radius:2px; overflow:hidden;
+  height:clamp(1300px,92vh,400px); border-radius:2px; overflow:hidden;
   background:linear-gradient(var(--sky1),var(--sky2));
 }
 .dock{
-  position:absolute;left:0; top:calc(20% - 40px); right:0; z-index:1;
+  position:absolute;left:0; top:calc(17% - 40px); right:0; z-index:1;
   
-  display:flex; justify-content:center; gap:calc(var(--s)*.2);
+  display:flex; justify-content:center; gap:calc(var(--s)*.6);
 }
 .float{
   width:var(--s); height:var(--s); padding:0; border:0; background:none;
